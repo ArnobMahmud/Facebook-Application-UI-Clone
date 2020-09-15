@@ -1,4 +1,5 @@
 import 'package:facebook_ui_clone/data/data.dart';
+import 'package:facebook_ui_clone/models/post_model.dart';
 import 'package:facebook_ui_clone/widgets/circle_button.dart';
 import 'package:facebook_ui_clone/widgets/rooms.dart';
 import 'package:facebook_ui_clone/widgets/stories.dart';
@@ -52,8 +53,15 @@ class HomeScreen extends StatelessWidget {
           SliverPadding(
             padding: const EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 5.0),
             sliver: SliverToBoxAdapter(
-              child: Stories(currentUser: currentUser, stories : stories),
+              child: Stories(currentUser: currentUser, stories: stories),
             ),
+          ),
+          SliverList(delegate: SliverChildBuilderDelegate((context, index) {
+            final Post post = posts[index];
+            return PostContainer(post: post);
+          }
+        //  childCount: posts.length,
+          )
           )
         ],
       ),
