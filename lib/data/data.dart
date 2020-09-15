@@ -96,7 +96,7 @@ final List<Post> posts = [
     shares: 3,
   ),
   Post(
-    user: onlineUsers[1],
+    user: onlineUsers[0],
     caption:
         'Please enjoy this placeholder text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     timeAgo: '3hr',
