@@ -1,5 +1,6 @@
 import 'package:facebook_ui_clone/data/data.dart';
 import 'package:facebook_ui_clone/widgets/circle_button.dart';
+import 'package:facebook_ui_clone/widgets/rooms.dart';
 import 'package:facebook_ui_clone/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -27,22 +28,28 @@ class HomeScreen extends StatelessWidget {
             centerTitle: false,
             floating: true,
             actions: [
-              CircleButton(icon: Icons.search,
-              iconSize: 30,
-              onPressed: () => print('search'),
+              CircleButton(
+                icon: Icons.search,
+                iconSize: 30,
+                onPressed: () => print('search'),
               ),
-              CircleButton(icon: MdiIcons.facebookMessenger,
-              iconSize: 30,
-              onPressed: () => print('messenger'),
+              CircleButton(
+                icon: MdiIcons.facebookMessenger,
+                iconSize: 30,
+                onPressed: () => print('messenger'),
               )
             ],
           ),
           SliverToBoxAdapter(
-            child: CreatePostContainer(currentUser : currentUser)
+              child: CreatePostContainer(currentUser: currentUser)),
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
+            sliver: SliverToBoxAdapter(
+              child: Rooms(onlineUsers: onlineUsers),
             ),
+          )
         ],
       ),
-      
     );
   }
 }
