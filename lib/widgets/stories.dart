@@ -49,11 +49,8 @@ class _StoryCard extends StatelessWidget {
   final User currentUser;
   final Story story;
 
-  const _StoryCard({Key key
-  , this.isAddStory = false, 
-    this.currentUser,
-    this.story
-    })
+  const _StoryCard(
+      {Key key, this.isAddStory = false, this.currentUser, this.story})
       : super(key: key);
 
   @override
@@ -61,7 +58,7 @@ class _StoryCard extends StatelessWidget {
     return Stack(
       children: [
         ClipRRect(
-         borderRadius: BorderRadius.circular(12.0),
+          borderRadius: BorderRadius.circular(12.0),
           child: CachedNetworkImage(
             imageUrl: isAddStory ? currentUser.imageUrl : story.imageUrl,
             width: 110.0,
@@ -78,25 +75,44 @@ class _StoryCard extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 4.0,
-          left: 3.0,
-          child: isAddStory ? Container(
-              height: 35,
-              width: 35,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                shape: BoxShape.circle,
-              ),
-              child: IconButton(
-                icon: const Icon(Icons.add,),
-                iconSize: 20,
-                color: Palette.facebookBlue,
-              onPressed: () => print('Add Story')
-              ),
-          )
-        : ProfileAvatar(imageUrl: story.user.imageUrl,
-         )
-        ),
+            top: 4.0,
+            left: 4.0,
+            child: isAddStory
+                ? Container(
+                    height: 35,
+                    width: 35,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                    ),
+                    child: IconButton(
+                        icon: const Icon(
+                          Icons.add,
+                        ),
+                        iconSize: 21,
+                        color: Palette.facebookBlue,
+                        onPressed: () => print('Add Story')),
+                  )
+                : ProfileAvatar(
+                    imageUrl: story.user.imageUrl,
+                    hasBorder: !story.isViewed,
+                  )
+            ),
+            Positioned(
+              bottom: 8.0,
+              left: 8.0,
+              right: 8.0,
+              child: Text(
+                isAddStory? 'Add to Story' : story.user.name,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+                overflow: TextOverflow.ellipsis,
+                maxLines: 2,
+              )
+              )
       ],
     );
   }

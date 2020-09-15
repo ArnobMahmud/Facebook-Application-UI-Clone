@@ -9,7 +9,7 @@ class ProfileAvatar extends StatelessWidget {
   const ProfileAvatar({
     Key key,
     this.imageUrl,
-    this.isActive = false,
+    this.isActive = false, bool hasBorder,
   }) : super(key: key);
 
   @override
