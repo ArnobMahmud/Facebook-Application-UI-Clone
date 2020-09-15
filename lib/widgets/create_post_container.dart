@@ -1,4 +1,5 @@
 import 'package:facebook_ui_clone/models/user_model.dart';
+import 'package:facebook_ui_clone/screens/screen.dart';
 import 'package:facebook_ui_clone/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -15,14 +16,23 @@ class CreatePostContainer extends StatelessWidget {
           children: [
             Row(
               children: [
-                ProfileAvatar(imageUrl : currentUser.imageUrl),
+                ProfileAvatar(imageUrl: currentUser.imageUrl),
                 SizedBox(
                   width: 8.0,
                 ),
                 Expanded(
-                  child: TextField(
-                    decoration: InputDecoration.collapsed(
-                        hintText: 'What\'s on your mind?'),
+                  child: InkWell(
+                    onDoubleTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => StatusPost()
+                          ));
+                    },
+                    child: TextField(
+                      decoration: InputDecoration.collapsed(
+                          hintText: 'What\'s on your mind?'),
+                    ),
                   ),
                 )
               ],
@@ -44,8 +54,7 @@ class CreatePostContainer extends StatelessWidget {
                 ),
                 FlatButton.icon(
                   onPressed: () => print('Photo'),
-                  icon: Icon(Icons.photo_library,
-                   color: Colors.green),
+                  icon: Icon(Icons.photo_library, color: Colors.green),
                   label: Text('Photo'),
                 ),
                 const VerticalDivider(
@@ -53,8 +62,7 @@ class CreatePostContainer extends StatelessWidget {
                 ),
                 FlatButton.icon(
                   onPressed: () => print('Room'),
-                  icon: Icon(Icons.video_call,
-                   color: Colors.purpleAccent),
+                  icon: Icon(Icons.video_call, color: Colors.purpleAccent),
                   label: Text('Room'),
                 ),
                 const VerticalDivider(
