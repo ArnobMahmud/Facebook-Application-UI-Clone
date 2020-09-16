@@ -1,4 +1,4 @@
-import 'package:facebook_ui_clone/colors/palette.dart';
+import 'package:facebook_ui_clone/colors/colors.dart';
 import 'package:facebook_ui_clone/data/data.dart';
 import 'package:facebook_ui_clone/models/user_model.dart';
 import 'package:facebook_ui_clone/widgets/widgets.dart';
@@ -53,12 +53,12 @@ class _CreateRoomButton extends StatelessWidget {
         width: 3.0,
         color: Colors.blueAccent[100],
       ),
-      textColor: Palette.facebookBlue,
+      textColor: Paint.facebookBlue,
       child: Row(
         children: [
           ShaderMask(
             shaderCallback: (rect) =>
-                Palette.createRoomGradient.createShader(rect),
+                Paint.createRoomGradient.createShader(rect),
             child: Icon(
               Icons.video_call,
               size: 30,

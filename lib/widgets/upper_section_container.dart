@@ -1,5 +1,4 @@
 import 'package:facebook_ui_clone/models/user_model.dart';
-import 'package:facebook_ui_clone/widgets/ststus_post.dart';
 import 'package:facebook_ui_clone/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +25,7 @@ class CreatePostContainer extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => StatusPost()
+                              builder: (context) => PostContainer()
                           ));
                     },
                     child: TextField(

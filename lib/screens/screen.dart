@@ -1,2 +1,2 @@
 export 'home_screen.dart';
-export 'search_page.dart';
+export 'top_bar_section.dart';

@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:facebook_ui_clone/colors/palette.dart';
-import 'package:facebook_ui_clone/models/story_model.dart';
+import 'package:facebook_ui_clone/colors/colors.dart';
+import 'package:facebook_ui_clone/models/story_day_model.dart';
 import 'package:facebook_ui_clone/models/user_model.dart';
 import 'package:facebook_ui_clone/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +70,7 @@ class _StoryCard extends StatelessWidget {
           height: double.infinity,
           width: 110.0,
           decoration: BoxDecoration(
-            gradient: Palette.storyGradient,
+            gradient: Paint.storyGradient,
             borderRadius: BorderRadius.circular(12.0),
           ),
         ),
@@ -90,7 +90,7 @@ class _StoryCard extends StatelessWidget {
                           Icons.add,
                         ),
                         iconSize: 21,
-                        color: Palette.facebookBlue,
+                        color: Paint.facebookBlue,
                         onPressed: () => print('Add Story')),
                   )
                 : ProfileAvatar(

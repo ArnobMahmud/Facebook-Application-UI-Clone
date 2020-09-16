@@ -1,5 +1,5 @@
 import 'package:facebook_ui_clone/models/post_model.dart';
-import 'package:facebook_ui_clone/models/story_model.dart';
+import 'package:facebook_ui_clone/models/story_day_model.dart';
 import 'package:facebook_ui_clone/models/user_model.dart';
 
 final User currentUser = User(
@@ -92,9 +92,9 @@ final List<Post> posts = [
     timeAgo: '3hr',
     imageUrl:
         'https://scontent.fdac49-1.fna.fbcdn.net/v/t1.0-9/96764275_1215988778732233_8858857312039731200_n.jpg?_nc_cat=111&_nc_sid=8bfeb9&_nc_ohc=aF9Q2wJs-T4AX8l_oro&_nc_ht=scontent.fdac49-1.fna&oh=2a5fadd47d9294e4f8733bf807cf6fc1&oe=5F85B72B',
-    likes: 183,
-    comments: 79,
-    shares: 18,
+    likes: 184,
+    comments: 76,
+    shares: 11,
   ),
   Post(
     user: currentUser,
@@ -103,27 +103,27 @@ final List<Post> posts = [
     imageUrl:
         'https://scontent.fdac49-1.fna.fbcdn.net/v/t1.0-9/116803457_285977029349173_7465893923662504662_n.jpg?_nc_cat=106&_nc_sid=09cbfe&_nc_ohc=DLHb1Q7gCooAX9zWfrI&_nc_oc=AQmOeDfcYEpBVKePmQ5zd0tmPcbt4hSWJzPRqi9dthn7o48SQmYUNXjyJKPQUVz2NHQ&_nc_ht=scontent.fdac49-1.fna&oh=d92454207d5c057df9fd7ffcdfb8728a&oe=5F84EBA4',
     likes: 112,
-    comments: 13,
+    comments: 31,
     shares: 3,
   ),
   Post(
     user: onlineUsers[4],
-    caption: 'This is a very good boi.',
-    timeAgo: '8hr',
+    caption: 'Hangout.',
+    timeAgo: '4hr',
     imageUrl:
         'https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40arnobmahmud%2Flinux-20-04-identical-to-windows-10-linuxfx-10-2-878a5927fc96&psig=AOvVaw3pgkLlNQ-WBQmP6skelM_o&ust=1600280331760000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjT3vni6-sCFQAAAAAdAAAAABAF',
-    likes: 894,
-    comments: 201,
-    shares: 27,
+    likes: 221,
+    comments: 33,
+    shares: 21
   ),
   Post(
     user: onlineUsers[3],
-    caption: 'Adventure 🏔',
-    timeAgo: '15hr',
+    caption: 'Adventure',
+    timeAgo: '12hr',
     imageUrl:
         'https://images.unsplash.com/photo-1573331519317-30b24326bb9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    likes: 722,
-    comments: 183,
-    shares: 42,
+    likes: 112,
+    comments: 62,
+    shares: 33,
   ),
 ];

@@ -1,4 +1,4 @@
-import 'package:facebook_ui_clone/colors/palette.dart';
+import 'package:facebook_ui_clone/colors/colors.dart';
 import 'package:facebook_ui_clone/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/screen.dart';
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Facebook UI',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Palette.scaffold,
+        scaffoldBackgroundColor: Paint.scaffold,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomeScreen(),
