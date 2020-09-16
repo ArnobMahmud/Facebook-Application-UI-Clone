@@ -5,11 +5,11 @@ import 'package:facebook_ui_clone/models/user_model.dart';
 import 'package:facebook_ui_clone/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-class Stories extends StatelessWidget {
+class MyDay extends StatelessWidget {
   final User currentUser;
   final List<Story> stories;
 
-  const Stories({
+  const MyDay({
     Key key,
     this.currentUser,
     this.stories,
@@ -93,7 +93,7 @@ class _StoryCard extends StatelessWidget {
                         color: Paint.facebookBlue,
                         onPressed: () => print('Add Story')),
                   )
-                : ProfileAvatar(
+                : Avatar(
                     imageUrl: story.user.imageUrl,
                     hasBorder: !story.isViewed,
                   )

@@ -2,11 +2,11 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:facebook_ui_clone/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-class ProfileAvatar extends StatelessWidget {
+class Avatar extends StatelessWidget {
   final String imageUrl;
   final bool isActive;
 
-  const ProfileAvatar({
+  const Avatar({
     Key key,
     this.imageUrl,
     this.isActive = false, bool hasBorder,

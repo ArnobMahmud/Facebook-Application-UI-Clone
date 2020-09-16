@@ -3,9 +3,9 @@ import 'package:facebook_ui_clone/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class CreatePostContainer extends StatelessWidget {
+class UpperBar extends StatelessWidget {
   final User currentUser;
-  const CreatePostContainer({Key key, this.currentUser}) : super(key: key);
+  const UpperBar({Key key, this.currentUser}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class CreatePostContainer extends StatelessWidget {
           children: [
             Row(
               children: [
-                ProfileAvatar(imageUrl: currentUser.imageUrl),
+                Avatar(imageUrl: currentUser.imageUrl),
                 SizedBox(
                   width: 8.0,
                 ),
@@ -25,7 +25,7 @@ class CreatePostContainer extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => PostContainer()
+                              builder: (context) => StatusContainer()
                           ));
                     },
                     child: TextField(

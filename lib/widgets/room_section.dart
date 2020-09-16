@@ -32,7 +32,7 @@ class Rooms extends StatelessWidget {
           final User user = onlineUsers[index - 1];
           return Padding(
             padding: EdgeInsets.symmetric(horizontal: 8.0),
-            child: ProfileAvatar(
+            child: Avatar(
               imageUrl: user.imageUrl,
               isActive: true,),
           );

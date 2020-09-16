@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class CircleButton extends StatelessWidget {
+class Button extends StatelessWidget {
   final IconData icon;
   final double iconSize;
   final Function onPressed;
 
-  const CircleButton({Key key, this.icon, this.iconSize, this.onPressed})
+  const Button({Key key, this.icon, this.iconSize, this.onPressed})
       : super(key: key);
 
   @override
