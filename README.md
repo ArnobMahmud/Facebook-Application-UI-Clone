@@ -1,6 +1,8 @@
 # facebook_ui_clone
 
-A new Flutter project.
+A new Flutter project by Arnob Mahmud
+
+![Untitled-3](https://user-images.githubusercontent.com/60808266/94358559-d3fb0c00-00c3-11eb-958c-09619cf94edc.jpg)
 
 ## Getting Started
 
