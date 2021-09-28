@@ -1,12 +1,21 @@
-# facebook_ui_clone
+# Facebook Application UI Clone
 
 [![develop-with-arnob](https://img.shields.io/badge/Develop%20with-Arnob%20Mahmud-1f425f.svg)](https://github.com/ArnobMahmud/) &nbsp;&nbsp;
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://www.facebook.com/arnob.mahmud.am/) &nbsp;&nbsp;
 [![made-with-java](https://img.shields.io/badge/Made%20by-Dart-1f425f.svg)](https://flutter.dev/)
 
-A new Flutter project by Arnob Mahmud
+<table>
+  <tr>
+    <td>
+          <img src="https://user-images.githubusercontent.com/60808266/135092641-0812161b-2bbd-4b92-b5a9-4c77edeaa6f3.png" >
+    </td>
+    <td>
+          <img src="https://user-images.githubusercontent.com/60808266/135092624-e9a4adcf-1556-422c-87c0-9747ebcf38e3.png" >
+    </td>
+  </tr>
+</table>
 
-![Untitled-3](https://user-images.githubusercontent.com/60808266/94358559-d3fb0c00-00c3-11eb-958c-09619cf94edc.jpg)
+A new Flutter project by Arnob Mahmud
 
 ## Getting Started
 
